@@ -1,0 +1,33 @@
+﻿@model ListViewModel
+
+<h1>Create List Item</h1>
+
+<hr />
+<div class="row">
+    <div class="col-6">
+
+        <div class="card">
+            <div class="card-header">
+                <h5>Add a new item</h5>
+            </div>
+
+            <div class="card-body">
+                <form asp-controller="Home" asp-action="CreateListItem">
+                    <div class="mb-3">
+                        <label class="form-label">New Item</label>
+                        <input asp-for="ListItem" class="form-control" type="text" />
+                    </div>
+
+                    <div class="mb-3">
+                        <button type="submit" class="btn-primary btn">Save</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card-footer">
+
+            </div>
+        </div>
+        
+    </div>
+</div>
